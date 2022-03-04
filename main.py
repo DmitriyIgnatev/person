@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
 
 # name = "db/blogs.db"
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 @app.route('/reg', methods=['GET', 'POST'])
 def reg():
     form = LoginForm()
