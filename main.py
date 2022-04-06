@@ -9,6 +9,7 @@ from data.news import News
 from forms.user import RegisterForm, LoginForm
 from forms.news import NewsForm
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
+import os
 
 app = Flask(__name__)
 login_manager = LoginManager()
